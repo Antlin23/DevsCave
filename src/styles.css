@@ -25,9 +25,38 @@
   font-display: swap;
 }
 
-/* Apply Raleway as the default font */
 body {
   font-family: 'Raleway', sans-serif;
   color: white;
   background-color: black;
 }
+
+/* Scroll animation */
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-300px * 5 - 20px * 5));
+        }
+    }
+
+    .animate-scroll {
+        animation: scroll 15s linear infinite;
+    }
+
+    .hover\:pause:hover {
+        animation-play-state: paused;
+    }
+
+    .carousel-img {
+      @apply w-[350px] h-[350px] object-cover flex-shrink-0 transition-transform duration-300 hover:scale-105 hover:z-10;
+  }
+
+  /* CTA Card */
+  .cta-card {
+    transform: rotate(-2deg) scale(1);
+  }
+  .cta-card:hover {
+    transform: rotate(2deg) scale(1.04);
+  }
