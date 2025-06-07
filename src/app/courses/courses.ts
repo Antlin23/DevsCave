@@ -41,7 +41,7 @@ export class Courses {
       description: 'Build robust web applications using .NET Core. Learn C#, MVC patterns, and database integration.',
       level: 'Intermediate',
       duration: '2-8 weeks',
-      image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=600&q=80'
+      image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=600&q=80'
     },
     {
       title: 'React for Beginners',
