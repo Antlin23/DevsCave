@@ -2,8 +2,8 @@
   <div class="container mx-auto flex justify-between items-center py-4 px-4">
     <!-- Logo -->
     <div class="flex items-center gap-2">
-      <img src="assets/images/logo.png" class="w-12" alt="Devs Cave" />
-      <span class="font-bold text-xl">Devs Cave</span>
+      <img src="assets/images/logo.png" class="w-12" alt="Dev's Nest" />
+      <span class="font-bold text-xl">Dev's Nest</span>
     </div>
     <!-- Hamburger (mobile) -->
     <button class="lg:hidden" (click)="menuOpen = !menuOpen" aria-label="Toggle menu">
@@ -13,21 +13,21 @@
     </button>
     <!-- Desktop Nav -->
     <nav class="hidden lg:flex items-center gap-8 font-medium">
-      <a class="hover:text-violet-500 transition-colors" href="#">Home</a>
-      <a class="hover:text-violet-500 transition-colors" href="#">About Us</a>
-      <a class="hover:text-violet-500 transition-colors" href="#">Courses</a>
-      <a class="hover:text-violet-500 transition-colors" href="#">Contact Us</a>
-      <a href="https://discord.gg/2fYtqx2KMM" class="bg-black border-2 border-violet-500 bg-violet-500 hover:bg-violet-600 transition-colors px-6 py-2.5 rounded-md">Join Discord</a>
-      <a href="#" class="bg-black border-2 border-violet-500 hover:bg-violet-500/10 transition-colors px-6 py-2.5 rounded-md">Courses</a>
+      <a class="hover:text-violet-500 transition-colors" routerLink="/">Home</a>
+      <a class="hover:text-violet-500 transition-colors" routerLink="/about">About Us</a>
+      <a class="hover:text-violet-500 transition-colors" routerLink="/courses">Courses</a>
+      <a class="hover:text-violet-500 transition-colors" routerLink="/contact">Contact Us</a>
+      <a href="https://discord.gg/hQXNW5UwQB" class="bg-black border-2 border-violet-500 bg-violet-500 hover:bg-violet-600 transition-colors px-6 py-2.5 rounded-md">Join Discord</a>
+      <a routerLink="/courses" class="bg-black border-2 border-violet-500 hover:bg-violet-500/10 transition-colors px-6 py-2.5 rounded-md">Courses</a>
     </nav>
   </div>
   <!-- Mobile Dropdown -->
   <div *ngIf="menuOpen" class="lg:hidden shadow-md px-4 pb-4 flex flex-col gap-3 font-medium">
-    <a class="hover:text-violet-500 transition-colors" href="#">Home</a>
-    <a class="hover:text-violet-500 transition-colors" href="#">About Us</a>
-    <a class="hover:text-violet-500 transition-colors" href="#">Courses</a>
-    <a class="hover:text-violet-500 transition-colors" href="#">Contact Us</a>
-    <a href="#" class="bg-black border-2 border-violet-500 bg-violet-500 hover:bg-violet-600 transition-colors px-6 py-2.5 rounded-md">Join Discord</a>
-    <a href="#" class="bg-black border-2 border-violet-500 hover:bg-violet-500/10 transition-colors px-6 py-2.5 rounded-md">Courses</a>
+    <a class="hover:text-violet-500 transition-colors" routerLink="/">Home</a>
+    <a class="hover:text-violet-500 transition-colors" routerLink="/about">About Us</a>
+    <a class="hover:text-violet-500 transition-colors" routerLink="/courses">Courses</a>
+    <a class="hover:text-violet-500 transition-colors" routerLink="/contact">Contact Us</a>
+    <a href="https://discord.gg/hQXNW5UwQB" class="bg-black border-2 border-violet-500 bg-violet-500 hover:bg-violet-600 transition-colors px-6 py-2.5 rounded-md">Join Discord</a>
+    <a routerLink="/courses" class="bg-black border-2 border-violet-500 hover:bg-violet-500/10 transition-colors px-6 py-2.5 rounded-md">Courses</a>
   </div>
 </menu>

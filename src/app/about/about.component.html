@@ -1,0 +1,53 @@
+<div class="max-w-7xl mx-auto px-8">
+  <!-- Hero Section -->
+  <section class="text-center py-16">
+    <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent">About Dev's Nest</h1>
+    <p class="text-lg text-gray-400 max-w-2xl mx-auto">Building a community of learners, teachers, and programming enthusiasts</p>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="py-16 bg-gray-800 rounded-2xl my-8">
+    <div class="max-w-3xl mx-auto px-8">
+      <h2 class="text-3xl font-bold mb-6 text-white">Our Mission</h2>
+      <p class="text-gray-400 leading-relaxed mb-4">At Dev's Nest, we're passionate about making programming education accessible to everyone. We believe that learning to code should be free, fun, and open to all. Our mission is to create a supportive community where anyone can learn, grow, and succeed in their programming journey.</p>
+      <p class="text-gray-400 leading-relaxed">We don't charge for our courses because we believe in the power of community-driven education. Our goal is to help as many people as possible discover the joy of programming and build their skills in a supportive environment.</p>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="py-16">
+    <h2 class="text-3xl font-bold mb-12 text-center text-white">Our Values</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div *ngFor="let value of values" class="bg-gray-800 p-8 rounded-2xl text-center transition-transform duration-300 hover:-translate-y-2">
+        <div class="text-5xl mb-4">{{ value.icon }}</div>
+        <h3 class="text-2xl font-bold mb-4 text-white">{{ value.title }}</h3>
+        <p class="text-gray-400 leading-relaxed">{{ value.description }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section class="py-16">
+    <h2 class="text-3xl font-bold mb-12 text-center text-white">Our Community</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div class="text-gray-400 leading-relaxed">
+        <p class="mb-6">Dev's Nest is more than just a learning platform – it's a vibrant community of passionate individuals who share a love for programming and technology. Whether you're a complete beginner or an experienced developer, you'll find a welcoming space to learn, share, and grow.</p>
+        <p class="mb-8">Join our Discord community to connect with fellow learners, get help with your projects, and participate in exciting coding challenges and events.</p>
+        <a href="https://discord.gg/hQXNW5UwQB" class="inline-block bg-violet-500 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 border-2 border-violet-500 hover:bg-transparent hover:text-violet-500 hover:-translate-y-1">Join Our Community</a>
+      </div>
+      <div>
+        <img [src]="team[0].image" alt="Our Community" class="w-full rounded-2xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-16 bg-gray-800 rounded-2xl my-8 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-white">Ready to Start Your Journey?</h2>
+    <p class="text-gray-400 mb-8">Join our community today and start learning programming for free!</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://discord.gg/hQXNW5UwQB" class="inline-block bg-violet-500 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 border-2 border-violet-500 hover:bg-transparent hover:text-violet-500 hover:-translate-y-1">Join Discord</a>
+      <a routerLink="/courses" class="inline-block bg-transparent text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 border-2 border-violet-500 hover:bg-violet-500 hover:-translate-y-1">Explore Courses</a>
+    </div>
+  </section>
+</div> 
