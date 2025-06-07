@@ -13,19 +13,37 @@
     </button>
     <!-- Desktop Nav -->
     <nav class="hidden lg:flex items-center gap-8 font-medium">
-      <a class="hover:text-violet-500 transition-colors cursor-pointer" routerLink="/">Home</a>
-      <a class="hover:text-violet-500 transition-colors cursor-pointer" routerLink="/about">About Us</a>
-      <a class="hover:text-violet-500 transition-colors cursor-pointer" routerLink="/courses">Courses</a>
-      <a class="hover:text-violet-500 transition-colors cursor-pointer" routerLink="/contact">Contact Us</a>
+      <a class="hover:text-violet-500 transition-colors cursor-pointer" 
+         routerLink="/" 
+         routerLinkActive="text-violet-500 font-semibold"
+         [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <a class="hover:text-violet-500 transition-colors cursor-pointer" 
+         routerLink="/about" 
+         routerLinkActive="text-violet-500 font-semibold">About Us</a>
+      <a class="hover:text-violet-500 transition-colors cursor-pointer" 
+         routerLink="/courses" 
+         routerLinkActive="text-violet-500 font-semibold">Courses</a>
+      <a class="hover:text-violet-500 transition-colors cursor-pointer" 
+         routerLink="/contact" 
+         routerLinkActive="text-violet-500 font-semibold">Contact Us</a>
       <a href="https://discord.gg/hQXNW5UwQB" class="bg-black border-2 border-violet-500 bg-violet-500 hover:bg-violet-600 transition-colors px-6 py-2.5 rounded-md cursor-pointer">Join Discord</a>
     </nav>
   </div>
   <!-- Mobile Dropdown -->
-  <div *ngIf="menuOpen" class="lg:hidden shadow-md px-4 pb-4 flex flex-col gap-3 font-medium">
-    <a class="hover:text-violet-500 transition-colors cursor-pointer" routerLink="/">Home</a>
-    <a class="hover:text-violet-500 transition-colors cursor-pointer" routerLink="/about">About Us</a>
-    <a class="hover:text-violet-500 transition-colors cursor-pointer" routerLink="/courses">Courses</a>
-    <a class="hover:text-violet-500 transition-colors cursor-pointer" routerLink="/contact">Contact Us</a>
-    <a href="https://discord.gg/hQXNW5UwQB" class="bg-black border-2 border-violet-500 bg-violet-500 hover:bg-violet-600 transition-colors px-6 py-2.5 rounded-md cursor-pointer">Join Discord</a>
+  <div *ngIf="menuOpen" class="lg:hidden shadow-md px-4 pb-4 flex flex-col gap-3 font-medium border-t border-gray-500 border-b border-gray-100">
+    <a class="py-2 hover:text-violet-500 transition-colors cursor-pointer" 
+       routerLink="/" 
+       routerLinkActive="text-violet-500 font-semibold"
+       [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a class="py-2 hover:text-violet-500 transition-colors cursor-pointer" 
+       routerLink="/about" 
+       routerLinkActive="text-violet-500 font-semibold">About Us</a>
+    <a class="py-2 hover:text-violet-500 transition-colors cursor-pointer" 
+       routerLink="/courses" 
+       routerLinkActive="text-violet-500 font-semibold">Courses</a>
+    <a class="py-2 hover:text-violet-500 transition-colors cursor-pointer" 
+       routerLink="/contact" 
+       routerLinkActive="text-violet-500 font-semibold">Contact Us</a>
+    <a href="https://discord.gg/hQXNW5UwQB" class="bg-violet-500 hover:bg-violet-600 transition-colors px-6 py-2.5 rounded-md cursor-pointer text-white text-center">Join Discord</a>
   </div>
 </menu>
