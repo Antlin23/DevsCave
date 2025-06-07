@@ -11,16 +11,16 @@
         <div>
           <div class="font-semibold mb-2">About Dev's Nest</div>
           <ul class="space-y-1 text-sm opacity-90">
-            <li><a routerLink="/" class="hover:text-violet-400">Home</a></li>
-            <li><a routerLink="/courses" class="hover:text-violet-400">Courses</a></li>
+            <li><a routerLink="/" class="hover:text-violet-400" (click)="scrollToTop()">Home</a></li>
+            <li><a routerLink="/courses" class="hover:text-violet-400" (click)="scrollToTop()">Courses</a></li>
             <li><a href="https://discord.gg/hQXNW5UwQB" class="hover:text-violet-400">Join Discord</a></li>
           </ul>
         </div>
         <div>
           <div class="font-semibold mb-2">Quick Links</div>
           <ul class="space-y-1 text-sm opacity-90">
-            <li><a routerLink="/contact" class="hover:text-violet-400">Contact Us</a></li>
-            <li><a routerLink="/privacy" class="hover:text-violet-400">Privacy Policy</a></li>
+            <li><a routerLink="/contact" class="hover:text-violet-400" (click)="scrollToTop()">Contact Us</a></li>
+            <li><a routerLink="/privacy" class="hover:text-violet-400" (click)="scrollToTop()">Privacy Policy</a></li>
           </ul>
         </div>
         <div>
@@ -35,7 +35,7 @@
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-xs opacity-70 gap-2">
       <div>&copy; 2025 Dev's Nest. All rights reserved. | Created by <a href="https://antondev.dev/" class="underline">Anton</a></div>
       <div class="flex gap-4">
-        <a routerLink="/privacy" class="hover:text-violet-400">Privacy Policy</a>
+        <a routerLink="/privacy" class="hover:text-violet-400" (click)="scrollToTop()">Privacy Policy</a>
       </div>
     </div>
   </footer>
