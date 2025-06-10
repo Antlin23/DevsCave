@@ -28,4 +28,5 @@ export class Home {
   ];
 
   selectedFeature = 0;
+  i = 0;
 }
