@@ -16,15 +16,15 @@ export class Home {
   ];
 
   featureTitles = [
-    'Learn Programming',
-    'Real-time Collaboration',
-    'Coding Challenges',
+    'Free Programming Lessons',
+    'Code Review & Feedback',
+    'Project Help',
   ];
 
   featureDescriptions = [
-    'Access lessons and resources for various programming languages',
-    'Collaborate with other developers in real-time',
-    'Engage in coding challenges and competitions',
+    'Learn programming through structured lessons and practical examples. We teach and share our knowledge for free.',
+    'Get your code reviewed and receive feedback to improve your programming skills.',
+    'Get help with your projects and learn how to solve real programming problems.',
   ];
 
   selectedFeature = 0;
